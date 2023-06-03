@@ -6,8 +6,7 @@ import java.util.List;
 
 // fait entièrement avec chatgpt parce que je n'ai pas le temps sur mon temps personnel pour faire les différentes version
 // parce que j'enchaine 2 job étudiant et quand j'ai fais remonté le problème on m'a dit que c'était pas grave je serai noté
-// sur 18 ce qui ne me convient pas.
-import java.util.ArrayList;
+// sur 18 ce qui ne me convient pas.import java.util.ArrayList;
 import java.util.List;
 
 public class Efficacite_meilleur {
