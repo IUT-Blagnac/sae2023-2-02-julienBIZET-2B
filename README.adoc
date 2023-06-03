@@ -45,8 +45,8 @@ Merci à mailto:saadialbane@gmail.com:[Saadia Albane] pour l'idée du problème 
 
 === De la solution...
 
-* LAST NAME : DOE
-* First name : John
+* LAST NAME : BIZET
+* First name : Julien
 * TD group : 
 - [ ] 1
 - [x] 2
