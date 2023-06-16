@@ -23,7 +23,6 @@ public class Simplicite_meilleur {
             String motMin = alMot.get(0);
             int indexMin = 0;
             for (int i = 1; i < alMot.size(); i++) {
-            	System.out.println(alMot.get(i) + motMin);
                 if (compareMots(alMot.get(i), motMin, ordre, 0)) {
                     motMin = alMot.get(i);
                     indexMin = i;
