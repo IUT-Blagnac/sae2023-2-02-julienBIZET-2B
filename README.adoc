@@ -176,17 +176,16 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 [options="header"]
 |==========================================================================
 | #    | lien                                                     | langage  | catégorie  |  Type
-| 1    | link:src/main/java/exercice/Exercice1.java[meilleur java]| Java     | Simplicité | Meilleur
-| 2    | link:src/main/java/exercice/Exercice2.java[pire java]    | Java     | Efficacité | Pire
-| ...  | ...                                                      | ...      | ...      
+| 1    | link:src/main/java/exercice/Efficacite_meilleur.java[meilleur java]| Java     | Simplicité | Meilleur
+                                    
 |==========================================================================
 
 === Phase 2 (deadline : **vendredi 16 juin 2023** à minuit)
 
-* [ ] Le rapport d'évaluation des algorithmes (e.g., asciidoc ou PDF). Pour chaque catégorie, vous devrez désigner qui est 1er, 2ème, 3ème, ... (avec possibilité d’ex-aequo si le hasard vous a attribué des algos similaires). Il doit se trouver dans le répertoire `rapport` de votre dépôt.
-* [ ] Les codes de test, d'évaluation ou de mesure. Ils doivent se trouver dans le répertoire `analyse` de votre dépôt.
-* [ ] Les références des librairies/outils utilisés (pour ceux non fournis). Elles doivent être listées dans la sous-section (Références) ci-dessous.
-* [ ] La chaîne de compilation et exécutable, ou paquetage selon les standards du langage (comment exécuter vos codes d'évaluation). Cette description doit se trouver dans vos rapports.
+* [x] Le rapport d'évaluation des algorithmes (e.g., asciidoc ou PDF). Pour chaque catégorie, vous devrez désigner qui est 1er, 2ème, 3ème, ... (avec possibilité d’ex-aequo si le hasard vous a attribué des algos similaires). Il doit se trouver dans le répertoire `rapport` de votre dépôt.
+* [x] Les codes de test, d'évaluation ou de mesure. Ils doivent se trouver dans le répertoire `analyse` de votre dépôt.
+* [x] Les références des librairies/outils utilisés (pour ceux non fournis). Elles doivent être listées dans la sous-section (Références) ci-dessous.
+* [x] La chaîne de compilation et exécutable, ou paquetage selon les standards du langage (comment exécuter vos codes d'évaluation). Cette description doit se trouver dans vos rapports.
 
 WARNING: Les répertoires et fichiers existants devront être complétés et mis à jour sans être renommés. Les binaires de compilation (répertoire `bin` ou `target` par exemple) ne devront pas être poussés sur le dépôt.
 
@@ -211,15 +210,14 @@ Voici les pré-requis pour exécuter nos codes d'évaluation.
 === Reproductibilité
 
 - Pour reproduire nos tests :
-. Veuiller récupérer la classe codeTests.java dans le répertoire analyse et le mettre au même endroit que les programmes à tester
+. Veuiller récupérer la classe ExerciceTest.java dans le répertoire analyse et le mettre au même endroit que les programmes à tester
 . Veiller à bien changer le nom de la classe à tester
 . Lancer le programme et c'est fini, à vous d'analyser les tests, s'ils sont bien passés ou non
 
 ---
 
 - Pour reproduire nos analyses du temps d'exécution et de la scalabilité :
-. Veuiller récupérer la classe codeEvaluationClassement.java dans le répertoire analyse et la mettre au même endroit que les programmes à tester
-. Veuiller mettre en commentaire la ligne 6 : qui exécute le programme
+. Veuiller récupérer la classe TestTemps.java dans le répertoire analyse et la mettre au même endroit que les programmes à tester
 . Veiller à bien changer le nom de la classe à tester
 . Lancer le programme, et vous voici avec les résultats
 
