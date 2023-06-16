@@ -194,20 +194,67 @@ WARNING: Les répertoires et fichiers existants devront être complétés et mis
 
 Voici les pré-requis pour exécuter nos codes d'évaluation.
 
-- Java v.x.y.z
-- ...
+. Assurez-vous d'avoir installé le JDK (Java Development Kit) sur votre système. Vous pouvez le télécharger depuis le site officiel d'Oracle et suivre les instructions spécifiques à votre système d'exploitation.
+
+. Télécharger et installer Visual Studio Code à partir du site officiel : link:https://code.visualstudio.com/[lien pour installer VSCode]. Choisissez la version appropriée pour votre système d'exploitation et suivez les instructions d'installation.
+
+. Dans Visual Studio Code, installez l'extension "Java Extension Pack". Pour cela, ouvrez Visual Studio Code, cliquez sur l'icône des extensions dans la barre latérale (ou utilisez le raccourci "Ctrl+Shift+X") et recherchez "Java Extension Pack". Cliquez sur "Installer" pour ajouter l'extension à votre environnement.
+
+. Télécharger les projets que vous souhaitez tester depuis le dépôt approprié. Assurez-vous de récupérer tous les fichiers sources et les dépendances nécessaires.
+
+. Ouvrer Visual Studio Code et ouvrez le dossier du projet que vous souhaitez tester. Vous pouvez le faire en sélectionnant "File" dans la barre de menu, puis en choisissant "Open Folder" et en naviguant jusqu'au dossier du projet.
+
+
+. Utiliser les fonctionnalités de Visual Studio Code pour compiler et exécuter le code Java. Par exemple, vous pouvez utiliser la commande "Run" (raccourci "Ctrl+F5") pour exécuter le programme actif ou utiliser les tâches prédéfinies pour effectuer des opérations spécifiques.
+
 
 === Reproductibilité
 
-- Pour reproduire nos analyses :
-. Installez X
-. Lancez Y
-. ...
+- Pour reproduire nos tests :
+. Veuiller récupérer la classe codeTests.java dans le répertoire analyse et le mettre au même endroit que les programmes à tester
+. Veiller à bien changer le nom de la classe à tester
+. Lancer le programme et c'est fini, à vous d'analyser les tests, s'ils sont bien passés ou non
+
+---
+
+- Pour reproduire nos analyses du temps d'exécution et de la scalabilité :
+. Veuiller récupérer la classe codeEvaluationClassement.java dans le répertoire analyse et la mettre au même endroit que les programmes à tester
+. Veuiller mettre en commentaire la ligne 6 : qui exécute le programme
+. Veiller à bien changer le nom de la classe à tester
+. Lancer le programme, et vous voici avec les résultats
+
+---
+
+- Pour reproduire nos analyses de la qualité du code :
+. Veiller bien à avoir installé l'extension SonarLint (lien en dessous) sur VSCode
+. Si l'étape précédente est bien réussie, recharger votre page pour la mettre à jour
+. Aller sur le programme que vous souhaitez vérifier, et regarder les erreurs et ajustements que propose SonarLint
+
+---
+
+- Pour reproduire nos analyses de la complexité du code :
+. Veuiller vous rendre sur le site link:https://shunnarski.github.io/BigO.html[site complexité algorithmique]
+. Puis, copier/coller votre code dans l'encadré correspondant
+. Analyser le résultat obtenu, si cela n'a pas marché et que vous ne savez pas comment calculer la complexité algorithmique, vous pouvez demander à ChatGPT
+
+--- 
+- Pour reproduire nos analyses de l'utilisation du CPU :
+. Veiller bien à avoir installé l'extension Resource Monitor (lien en dessous) sur VSCode
+. Si l'étape précédente est bien réussie, recharger votre page pour la mettre à jour, normalement un bandeau est aparu avec des informations sur votre PC
+.  Veuiller récupérer la classe codeEvaluationClassement.java dans le répertoire analyse et la mettre au même endroit que les programmes à tester
+. Veuiller mettre en commentaire tout ce qui suit la ligne 6, pour n'avoir qu'à tester le programme
+. Veiller à bien changer le nom de la classe à tester
+. Lancer le programme plusieurs fois, et vous voici avec les résultats avec votre cpu (encadré en rouge)
+
+image::img/ResourceMonitor.png[alt Bandeau Resource Monitor]
 
 === Références
 
-- link:http://xyz[Mon super outil XYZ]
-- ...
+- Utilisation de la méthode java : System.nanoTime()
+- Utilisation de l'extension SonarLint link:https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode[SonarLink extension]
+- Utilisation de l'extension Resource Monitor link:https://marketplace.visualstudio.com/items?itemName=mutantdino.resourcemonitor[Resource Monitor extension]
+- Utilisation du site Big O notation calculator link:https://shunnarski.github.io/BigO.html[Lien complexité algorithmique]
+
 
 == Généralités, notation de la SAÉ et résultat du concours
 
